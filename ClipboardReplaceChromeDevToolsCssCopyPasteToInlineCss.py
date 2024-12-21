@@ -16,4 +16,4 @@ lines=inputStr.split('\n')
 for line in lines:
     pair=line.split(' ',1)
     r+=f'''{pair[0]}:{pair[1]};'''
-clipboard.copy(r.replace('\n','').replace('\r',''))
+clipboard.copy(r.replace('\n','').replace('\r','').replace('"',"'"))
